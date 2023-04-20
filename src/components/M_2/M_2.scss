@@ -1,0 +1,39 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.m2 {
+  background-image: url(./img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__container {
+    background: radial-gradient(84.34% 50.29% at 48.75% 49.71%, #2950C2 0%, rgba(38, 91, 199, 0.96) 40.62%, rgba(39, 98, 187, 0) 85.42%);
+  }
+
+  &__text {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding: 80px 54px;
+
+    &::before {
+      content: url(./img/“.png);
+      position: absolute;
+      top: 50px;
+      left: 40px;
+    }
+    &::after {
+      content: url(./img/“.png);
+      position: absolute;
+      bottom: 50px;
+      right: 40px;
+      transform: rotate(-180deg);
+    }
+  }
+}

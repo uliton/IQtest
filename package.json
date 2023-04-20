@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "author": "Uliton",
   "private": true,
-  "type": "module",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",

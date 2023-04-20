@@ -1,0 +1,87 @@
+@import '../../utils/variables';
+@import '../../utils/mixins';
+
+.m1 {
+  background-image: url(./img/rain_bk.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 24px 0;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFC700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 184px;
+  }
+
+  &__button {
+    width: 189px;
+    height: 41px;
+    background: radial-gradient(50% 50% at 50% 50%, #FFC700 0%, #FFC700 100%);
+    border-radius: 20px;
+    margin: 0 auto 44px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    max-width: 280px;
+
+    &--1 {
+      color: #FFC700;
+    }
+
+    &--2 {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__link {
+    position: relative;
+    background-image: url(./img/arr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    text-decoration: none;
+    margin-bottom: 44px;
+    
+    &::after {
+      content: attr(data-text);
+      color: #fff;
+      position: absolute;
+      bottom: -24px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+}

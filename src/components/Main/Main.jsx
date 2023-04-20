@@ -9,7 +9,7 @@ export const Main = () => {
     <div className="main">
       <M_1 />
       <M_2 />
-      {/* <M_3 /> */}
+      <M_3 />
       {/* <M_4 /> */}
     </div>
   );

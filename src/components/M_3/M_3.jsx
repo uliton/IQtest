@@ -26,9 +26,12 @@ export const M_3 = () => {
         которая принесет вам скорейший финансовый результат.
       </div>
 
-      <img src={br} alt="brain" />
+      <img src={br} alt="brain" className="m3__image"/>
 
-      <button>
+      <button
+        type="button"
+        className="m3__button"
+      >
         пройти тест
       </button>
     </div>
